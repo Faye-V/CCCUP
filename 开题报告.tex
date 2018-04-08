@@ -1,0 +1,53 @@
+\documentclass{article}
+
+\usepackage[UTF8]{ctex}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{bigstrut}
+\usepackage{subfigure}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+\usepackage{setspace}
+
+
+\geometry{a4paper}%,centering,left=2.8cm,right=2.8cm,top=2.8cm,bottom=2.8cm}%scale=0.8}
+
+\pagestyle{plain}
+
+\title{第三次作业开题报告}
+\author{{管唯宇 \quad 2015011547}\\{王思语 \quad 2015012054}\\{朱芮萱 \quad 2015012035}}
+\date{\today}
+
+\begin{document}
+
+    \maketitle
+    \fontsize{12pt}{17pt}\selectfont
+
+    \section{题目简述}
+    C楼清风湛影超市作为紫荆公寓地标性的存在，受到老师同学们的青睐，经常人满为患。超市的人流量随着时间、季节、气候、货源等诸多因素变化，因此，超市为了节约成本，最大化顾客和超市双方的福利，就需要根据不同的客流量来合理安排收银员的个数。\\
+    \indent 我们希望建立一个超市最优收银员个数与客流量之间的数学模型，帮助确定C楼清风湛影超市南北两侧收银台在不同时间段应该配备的收银员个数。
+
+    \section{问题假设}
+    1. 本模型中的客流量是指每小时超市中的顾客数。\\
+    \indent 2. 考虑到超市南北两侧收银台的地理位置不同，即使在同一时间点，前去南北两侧结账的顾客数量也有差异。\\
+    \indent 3. 收银员的服务采取先到先的模式，即先到的先服务，每次只服务一位顾客，不考虑插队情况。\\
+    \indent 4. 超市内北侧两台自助结账机均可正常工作，并且自助结账机的服务效率与人工服务效率不同。\\
+    \indent 5. 对超市而言，需要节约劳动力，节省服务成本；对顾客而言，需要最大程度缩短排队总时间。
+    \section{理论依据}
+    一个完整的排队系统是由到达过程、服务过程和排队规则组成。在最简单的理想化排队系统中，到达过程是一个强度为$\lambda$的$Poisson$流，到达的时间间隔是指数分布$Exp(\lambda)$；服务过程是一个强度为$\mu$的$Poisson$流，因此服务的间隔时间便是指数分布$Exp(\mu)$。到达过程与服务过程独立，服务规则同假设。由此可确定，本模型是一个$M/M/(3+3+2)$的排队系统。其中，3+3+2代表南北两侧的各三台人工结账系统和北侧的两台自助结账机。
+        % \begin{figure}[h]
+        %     \centering
+        %     \includegraphics[width=.95\textwidth]{./fig/1.eps}
+        %     \caption{title}
+        %     \label{fig:1}
+        % \end{figure}
+
+    \bibliographystyle{plain}
+    \bibliography{参考文献}
+
+\end{document}
